@@ -1,0 +1,37 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8801/eureka/
+  instance:
+    instance-id: provider
+    prefer-ip-address: true
+server:
+  port: 8802
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        #include: refresh,health,info #打开部分
+  security:
+    enabled: false     #SpringBoot 1.5.X 以上默认开通了安全认证，如果不关闭会要求权限
+#spring:
+#  application:
+#    name: ribbon-provider
+#  cloud:
+#    config:
+##      discovery:
+##        enabled: true
+##        #配置中心的服务id
+##        service-id: service-config
+#      uri: http://localhost:5555  # 服务启动后，去找5555服务
+#      name: application  # 从github上读取的资源名称，不要加 .yml后缀
+#      label: master # master分支
+#      profile: dev  # dev配置
+##      override-none: false
+##      fail-fast: true
+#      #git仓库中，可以使用label来做不同版本的配置管理 默认是master
+#      #label: '1.0'
