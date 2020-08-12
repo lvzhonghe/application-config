@@ -13,4 +13,4 @@ spring:
   application:
     name: microservice-config-client-test
   user:
-    username: hello-config-test
+    username: hello-config-test22
