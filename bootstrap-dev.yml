@@ -21,8 +21,8 @@ management:
 spring:
   application:
       name: ribbon-provider
-    user:
-      username: "ttttttttttttt"
+  user:
+    username: "ttttttttttttt"
 #spring:
 #  application:
 #    name: ribbon-provider
