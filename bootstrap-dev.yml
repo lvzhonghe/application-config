@@ -18,10 +18,11 @@ management:
         #include: refresh,health,info #打开部分
   security:
     enabled: false     #SpringBoot 1.5.X 以上默认开通了安全认证，如果不关闭会要求权限
-application:
-    name: ribbon-provider
-  user:
-    username: "ttttttttttttt"
+spring:
+  application:
+      name: ribbon-provider
+    user:
+      username: "ttttttttttttt"
 #spring:
 #  application:
 #    name: ribbon-provider
