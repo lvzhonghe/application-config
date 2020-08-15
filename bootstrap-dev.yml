@@ -22,7 +22,7 @@ spring:
   application:
       name: ribbon-provider
   user:
-    username: "update"
+    username: "update222"
 #spring:
 #  application:
 #    name: ribbon-provider
